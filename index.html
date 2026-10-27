@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Diario di lettura della classe</title>
+</head>
+<body>
+    <h1>Recensione del libro</h1>
+    <label for="titolo">Inserisci il nome del libro che vuoi recensire</label><br>
+    <input type="text" id="titolo"><br>
+    <label for="autore">Inserisci il nome dell'autore</label><br>
+    <input type="text" id="autore"><br>
+    <label for="genere">Inserisci il genere del libro</label><br>
+    <select id="genere">
+        <option value="">Scegli il genere</option>
+        <option value="Avventura">Avventura</option>
+        <option value="Giallo">Giallo</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Storico">Storico</option>
+    </select><br>
+
+    <p>Decidi il formato del libro tra le due opzioni</p>
+    Formato:<br>
+    <input type="radio" id="Cartaceo" name="formato" value="Cartaceo">
+    <label for="Cartaceo">Cartaceo</label><br>
+    <input type="radio" id="Ebook" name="formato" value="Ebook">
+    <label for="Ebook">Ebook</label><br>
+    <label for="stelle">Voto in stelle</label><br>
+    <input type="number" id="stelle" min="1" max="5"><br>
+    <input type="checkbox" id="consigliato">
+    <label for="consigliato">Lo consiglio ai compagni</label><br>
+    <button onclick="registra()">Registra</button>
+    <p id="messaggio"></p>
+    
+    <!-- IMMAGINE RIMPICCIOLITA QUI -->
+    <img id="immagine" src="" alt="" width="150">
+    
+    <ul id="elenco"></ul>
+
+    <table>
+        <tr>
+            <th>Avventura</th>
+            <th>Giallo</th>
+            <th>Fantasy</th>
+            <th>Storico</th>
+        </tr>
+        <tr>
+            <td id="conta-avventura">0</td>
+            <td id="conta-giallo">0</td>
+            <td id="conta-fantasy">0</td>
+            <td id="conta-storico">0</td>
+        </tr>
+    </table>
+
+    <h2>Statistiche</h2>
+    <p id="testo-media"></p>
+    <p id="giudizio-media"></p>
+    <p id="libro-preferito"></p>
+
+    <script src="dist/main.js"></script>
+</body>
+</html>
